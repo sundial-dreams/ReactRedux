@@ -1,0 +1,16 @@
+.button{
+  width: 200px;
+  height: 32px;
+  button {
+    width: 100%;
+    height: 100%;
+    background: blueviolet;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    border: none;
+    &:hover{
+      background: darkslateblue;
+    }
+  }
+}

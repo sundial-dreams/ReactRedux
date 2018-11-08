@@ -14,16 +14,18 @@ $height: 400px;
 
 .app {
   @include Size($width, $height);
-  border-radius: 10px;
-  background: blueviolet;
   box-shadow: 0 0 10px;
   @include Center();
+  flex: 1;
+  img {
+    width: 100%;
+    height: 100%;
+  }
   h1 {
     color: white;
     @include Center();
   }
   span {
     color: white;
-
   }
 }

@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import style from "./test.scss";
+import image from "./a.jpg";//导入图片
+import Button from "components/Button/button";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -9,9 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className={style.app}>
-        <h1>using devServer</h1>
-        <span>using devServers</span>
-        <h2>using hello world</h2>
+        <img src={image}/>
+        <h1>dpf</h1>
+        <Button text="click"/>
       </div>
     )
   }
