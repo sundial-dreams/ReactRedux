@@ -1,0 +1,29 @@
+$width: 400px;
+$height: 400px;
+@mixin Size($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin Center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app {
+  @include Size($width, $height);
+  border-radius: 10px;
+  background: blueviolet;
+  box-shadow: 0 0 10px;
+  @include Center();
+  h1 {
+    color: white;
+    @include Center();
+  }
+  span {
+    color: white;
+
+  }
+}
